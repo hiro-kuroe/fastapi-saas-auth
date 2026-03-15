@@ -23,7 +23,7 @@ JWT authentication and role-based access control example built with FastAPI.
 ## Installation
 
 ```bash
-git clone https://github.com/入力まだ
+git clone https://github.com/hiro-kuroe/fastapi-saas-auth
 cd fastapi-saas-auth
 pip install -r requirements.txt
 ```
