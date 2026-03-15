@@ -23,7 +23,7 @@ JWT authentication and role-based access control example built with FastAPI.
 ## Installation
 
 ```bash
-git clone https://github.com/hiro-kuroe/fastapi-saas-auth
+git clone https://github.com/hiro-kuroe/fastapi-saas-auth.git
 cd fastapi-saas-auth
 pip install -r requirements.txt
 ```
@@ -41,6 +41,25 @@ http://127.0.0.1:8000
 ```
 
 Swagger documentation:
+
+```
+http://127.0.0.1:8000/docs
+```
+## Run with Docker
+
+Build the image
+
+```
+docker build -t fastapi-saas-auth .
+```
+
+Run the container
+
+```
+docker run -p 8000:8000 fastapi-saas-auth
+```
+
+Then open Swagger:
 
 ```
 http://127.0.0.1:8000/docs
