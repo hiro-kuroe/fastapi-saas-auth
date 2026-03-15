@@ -54,19 +54,25 @@ http://127.0.0.1:8000/docs
 POST /users
 ```
 
+## Example User JSON
+
+```json
+{
+  "username": "testuser",
+  "email": "test@example.com",
+  "password": "test1234"
+}
+```
+
 2. Login
 
 ```
 POST /token
 ```
 
-3. Copy access token
+3. Click Authorize in Swagger.
 
-4. Click **Authorize** in Swagger and paste:
-
-```
-Bearer <token>
-```
+4. After authorization, protected endpoints can be executed.
 
 ## API Endpoints
 
@@ -80,29 +86,21 @@ POST /token      Login
 ### Current User
 
 ```
-GET   /me
-PATCH /me
+GET   /me      Get current user
+PATCH /me      Update current user
 ```
 
 ### Admin
 
 ```
-GET    /users
-PUT    /users/{user_id}
-DELETE /users/{user_id}
+GET    /users            List users
+PUT    /users/{user_id}  Update user
+DELETE /users/{user_id}  Delete user
 ```
 
 Admin endpoints require a user with role `admin`.
 
-## Example User JSON
 
-```json
-{
-  "username": "testuser",
-  "email": "test@example.com",
-  "password": "test1234"
-}
-```
 
 ## License
 
